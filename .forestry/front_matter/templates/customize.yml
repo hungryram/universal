@@ -1,4 +1,180 @@
 ---
 label: Customize
 hide_body: false
-fields: []
+fields:
+- name: form_success_page
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body
+  label: Form Success Page
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: branding
+    type: field_group
+    config: {}
+    fields:
+    - name: site_title
+      type: text
+      config:
+        required: false
+      label: Site Title
+    - name: logo
+      type: file
+      config:
+        maxSize: 2
+      label: Logo
+    - name: favicon
+      type: file
+      config:
+        maxSize: 1
+      label: Favicon
+    label: Branding
+  - name: colors
+    type: field_group
+    config: {}
+    fields:
+    - name: header_background_color
+      type: color
+      label: Header Background Color
+      config:
+        required: false
+        color_format: Hex
+    - name: enable_white_menu_color
+      type: boolean
+      label: Enable White Menu Color
+      description: Makes navigation on white background legible.
+    label: Colors
+  label: Header
+- name: home_page
+  type: field_group
+  config: {}
+  fields:
+  - name: slideshow
+    type: field_group
+    config: {}
+    fields:
+    - name: slideshow
+      type: field_group_list
+      fields:
+      - name: image
+        type: file
+        config:
+          maxSize: 2
+        label: Image
+      - name: heading
+        type: text
+        config:
+          required: false
+        label: Heading
+      - name: body
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+          schema:
+            format: markdown
+        label: Body
+      - name: slideshow_button
+        type: field_group
+        config: {}
+        fields:
+        - name: button_text
+          type: text
+          config:
+            required: false
+          label: Button Text
+        - name: button_link
+          type: text
+          config:
+            required: false
+          label: Button Link
+        - name: new_tab
+          type: boolean
+          label: Open in a new tab
+        - name: button_background_color
+          type: color
+          config:
+            required: false
+            color_format: Hex
+          label: Button Background Color
+        - name: button_text_color
+          type: color
+          label: Button Text Color
+          config:
+            required: false
+            color_format: Hex
+        label: Add Button
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: Slideshow
+    label: Slideshow
+  - name: home_sections
+    type: blocks
+    label: Home Sections
+    template_types: []
+    config:
+      min: 
+      max: 
+  label: Home Page
+- name: footer
+  type: field_group
+  config: {}
+  fields:
+  - name: footer_colors
+    type: field_group
+    config: {}
+    fields:
+    - name: footer_background_color
+      type: color
+      label: Footer Background Color
+      config:
+        required: false
+        color_format: Hex
+    - name: enable_white_text_color
+      type: boolean
+      label: Enable White Text Color
+      description: Makes navigation on white background legible.
+    label: Footer Colors
+  label: Footer
+- name: website_colors
+  type: field_group
+  config: {}
+  fields:
+  - name: primary_color
+    type: color
+    label: Primary Color
+    config:
+      required: false
+      color_format: Hex
+  - name: secondary_colors
+    type: color
+    label: Secondary Colors
+    config:
+      required: false
+      color_format: Hex
+  - name: accent_colors
+    type: color
+    label: Accent Colors
+    config:
+      required: false
+      color_format: Hex
+  label: Website Colors
