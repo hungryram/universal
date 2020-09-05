@@ -17,6 +17,15 @@ sections:
   match: "*"
   templates:
   - page
+- type: heading
+  label: Blog
+- type: directory
+  path: content/blog
+  label: Posts
+  create: documents
+  match: "**/*"
+  templates:
+  - posts
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
