@@ -1,0 +1,20 @@
+{{ partial "global/navbar" . }}
+<div class="home-slide">
+  {{ range .Site.Data.design.home_slideshow.slideshow }}
+  <section class="hero is-link is-fullheight-with-navbar">
+  
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body slide-content mt-6">
+      <div class="container is-fluid has-text-centered">
+        <div class="columns">
+          <div class="column is-half has-text-white is-offset-one-quarter">
+            <h1 class="title is-2 has-text-white hero-title is-uppercase is-size-3-mobile">{{ .heading }}</h1>
+            {{ if .link }}<a href="/" class="hero-button has-text-white">{{ .link_text }}</a>{{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  {{ end }}
+</div>
