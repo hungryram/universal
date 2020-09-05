@@ -1,4 +1,39 @@
 ---
 label: Social Media
 hide_body: true
-fields: []
+fields:
+- name: instagram
+  type: text
+  config:
+    required: false
+  label: Instagram
+- name: facebook
+  type: text
+  config:
+    required: false
+  label: Facebook
+- name: twitter
+  type: text
+  config:
+    required: false
+  label: Twitter
+- name: youtube
+  type: text
+  config:
+    required: false
+  label: Youtube
+- name: linkedin
+  type: text
+  config:
+    required: false
+  label: Linkedin
+- name: pinterest
+  type: text
+  config:
+    required: false
+  label: Pinterest
+- name: yelp
+  type: text
+  config:
+    required: false
+  label: Yelp
