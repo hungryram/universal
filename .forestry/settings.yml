@@ -7,11 +7,9 @@ sections:
 - type: document
   path: data/profile.yaml
   label: Profile
-  match: "**/*"
 - type: document
   path: data/customization.yaml
   label: Customization
-  match: "**/*"
 - type: directory
   path: content
   label: Pages
