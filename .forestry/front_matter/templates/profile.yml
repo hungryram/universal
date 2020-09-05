@@ -1,4 +1,74 @@
 ---
 label: Profile
 hide_body: true
-fields: []
+fields:
+- name: business_name
+  type: text
+  config:
+    required: false
+  label: Business Name
+- name: contact
+  type: field_group
+  config: {}
+  fields:
+  - name: full_name
+    type: text
+    config:
+      required: false
+    label: Full Name
+  - name: phone
+    type: text
+    config:
+      required: false
+    label: Phone
+  - name: mobile
+    type: text
+    config:
+      required: false
+    label: Mobile
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  - name: street
+    type: text
+    config:
+      required: false
+    label: Street
+  - name: city
+    type: text
+    config:
+      required: false
+    label: City
+  - name: state
+    type: text
+    config:
+      required: false
+    label: State
+  - name: zip
+    type: text
+    config:
+      required: false
+    label: Zip
+  label: Contact
+- name: social_media
+  type: field_group
+  config: {}
+  fields:
+  - name: social_media
+    type: include
+    config: {}
+    template: social-media
+    label: Social Media
+  label: Social Media
+- name: search_engine_optimization
+  type: field_group
+  config: {}
+  fields:
+  - name: seo
+    type: include
+    config: {}
+    template: seo
+    label: SEO
+  label: Search Engine Optimization
