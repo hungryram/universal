@@ -1,0 +1,24 @@
+---
+form_success_page:
+  heading: ''
+  body: ''
+header:
+  branding:
+    site_title: ''
+    logo: ''
+    favicon: ''
+  colors:
+    header_background_color: ''
+    enable_white_menu_color: false
+home_page:
+  slideshow:
+    slideshow: []
+  home_sections: []
+footer:
+  footer_colors:
+    footer_background_color: ''
+    enable_white_text_color: false
+website_colors:
+  primary_color: ''
+  secondary_colors: ''
+  accent_colors: ''

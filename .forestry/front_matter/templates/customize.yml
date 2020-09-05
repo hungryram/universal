@@ -178,3 +178,5 @@ fields:
       required: false
       color_format: Hex
   label: Website Colors
+pages:
+- data/customization.yaml
