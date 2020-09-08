@@ -1,4 +1,14 @@
 ---
 label: Team
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Name
+- name: job_title
+  type: text
+  config:
+    required: false
+  label: Job Title
