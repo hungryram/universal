@@ -12,3 +12,5 @@ fields:
   config:
     required: false
   label: Job Title
+pages:
+- content/our-team/john-smith.md
