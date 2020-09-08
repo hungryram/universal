@@ -61,6 +61,9 @@ home_page:
       ipsum magni similique dignissimos impedit nulla, dolor, nemo a quo.
     button_text: Read More
     image_alt_tag: Computer girl
+  - template: featured-team
+    title: Meet the Team
+    body_text: Our team can help you out!
 footer:
   footer_colors:
     footer_background_color: ''
