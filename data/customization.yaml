@@ -44,6 +44,13 @@ home_page:
       body: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, soluta
         nemo in dignissimos neque ipsum, minus enim accusamus sapiente incidunt rem?
         Ipsum in ea dolores harum? Ab sapiente amet temporibus!
+  - template: text-over-image
+    heading: Text Over Image
+    body: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, soluta nemo
+      in dignissimos neque ipsum, minus enim accusamus sapiente incidunt rem?
+    image: "/uploads/sidekix-media-l6u4gikvxbs-unsplash.jpg"
+    link_text: Read More
+    link: https://hungryram.com
 footer:
   footer_colors:
     footer_background_color: ''
