@@ -1,58 +1,24 @@
 <div class="column">
-    <div class="box profile-sidebar">
-      <img src="{{ .Site.Data.profile.profile_photo }}" alt="{{ .Site.Data.profile.primary_company_name }}" width="200">
-      <br>
-      <h2 class="title is-4">Meet Yoori Park</h2>
-      <h4 class="subtitle is-6">Los Angeles Realtor</h4>
-      <h4 class="subtitle is-6">{{ .Site.Data.profile.primary_contact.license_type }}: {{ .Site.Data.profile.primary_contact.license_number }}</h4>
-    </div>
-  
-      <div class="box">
-          <h2 class="subtitle is-6">Recent Listings<h2>
-              {{ range first 4 (where $.Site.RegularPages "Type" "listings") }}
-                <article class="media">
-                  {{ if .Params.photos.main_photo }}
-                  <div class="media-left">
-                    <figure class="image is-96x96">
-                      <img src="{{ .Params.photos.main_photo }}" alt="Image">
-                    </figure>
-                  </div>
-                  {{ else }}
-                  <div class="media-left">
-                    <figure class="image is-96x96">
-                      <img src="http://www.hungryram.com/uploads/nophotohouse.jpg" alt="Image">
-                    </figure>
-                  </div>
-                  {{end}}
-                  <div class="media-content">
-                    <div class="content">
-                        <h1 class="title is-6" style="margin: 2px">{{ .Params.short_description }} ({{ .Params.status }})</h1>
-                        <h4 class="subtitle is-6" style="margin:2px">${{ lang.NumFmt 0 .Params.weight }}</h4>
-                        <a href="{{ .Permalink }}" class="secondary-btn">More Info</a>
-                  </div>
-              </article>
-              {{end}}
-      </div>
-  
-      <div class="box">
-          <h2 class="subtitle is-6">Latest Posts<h2>
-  
-          {{ range  first 4 ( where $.Site.RegularPages "Type" "blog") }}
-          <article class="media">
-              {{ if .Params.featured_image }}
-              <div class="media-left">
-                <figure class="image is-96x96">
-                  <img src="{{ .Params.featured_image }}" alt="Image">
-                </figure>
-              </div>
-              {{end}}
-              <div class="media-content">
-                <div class="content">
-                    <h1 class="title is-6" style="margin: 0;">{{ .Params.title }}</h1>
-                    <time><small>{{.Date.Format "Jan 2, 2006" }}</small></time><br>
-                    <a href="{{ .Permalink }}" class="secondary-btn">Continue Reading</a>
-              </div>
-          </article>
+    <div class="category__list">
+      <h2 class="subtitle is-6"><strong>Blog Categories</strong></h2>
+        <ul>
+          {{ range $categories, $taxonomy := .Site.Taxonomies.categories }}
+          <li>
+            <a href="/categories{{ $categories | urlize | relURL }}" class="category__item" class="link-color">{{ $categories | humanize }}</a>
+          </li>
           {{end}}
-      </div>
-  </div>
+
+        </ul>
+    </div>
+    <div class="category__list pt-6">
+      <h2 class="subtitle is-6"><strong>Blog Tags</strong></h2>
+        <ul>
+          {{ range $tags, $taxonomy := .Site.Taxonomies.tags }}
+          <li>
+            <a href="/tags{{ $tags | urlize | relURL }}" class="category__item" class="link-color">{{ $tags | humanize }}</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+</div>

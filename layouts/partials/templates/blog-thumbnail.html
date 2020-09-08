@@ -1,0 +1,16 @@
+<div class="thumbnail__blog mx-2">
+    <a href="{{ .Permalink }}">
+        <div class="thumbnail__blog__container">
+            <div class="thumbnail__blog__img" style="background:url({{ .Params.featured_image }}) no-repeat center;background-size:cover;height:35vh"></div>
+        </div>
+    </a>
+    <div class="columns is-mobile thumbnail__details">
+        <div class="column has-text-centered">
+            <div class="blog__details content pt-3">
+                <span class="blog__date is-size-7">{{.Date.Format "January 2, 2006" }}</span>
+                <h1 class="title is-6 blog__title mb-3 mt-2">{{ .Title }}</h1>
+                <a href="{{ .Permalink }}" class="link-color">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>   

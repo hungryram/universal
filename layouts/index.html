@@ -44,36 +44,13 @@
     <div class="container">
       <div class="columns">
         <div class="column is-half is-offset-one-quarter has-text-centered">
-          <h1 class="title is-3">{{ .title }}</h1>
+          <h1 class="title is-3">{{ .heading }}</h1>
           <p>{{ .body_text }}</p>
         </div>
       </div>
       <div class="responsive-slide">
         {{ range first 6 (where $.Site.RegularPages "Type" "blog") }}
-            <div class="column">
-                <div class="home-card card">
-                    <div class="card-image">
-                        {{ if .Params.featured_image}}
-                      <figure class="image is-16by9">
-                        <img src="{{ .Params.featured_image }}" alt="Featured blog image" style="object-fit: cover;">
-                      </figure>
-                      {{ else }}
-                      <figure class="image is-16by9">
-                        <img src="http://www.hungryram.com/uploads/nophotohouse.jpg" alt="Featured blog image" style="object-fit: cover;">
-                      </figure>
-                      {{ end }}
-                    </div>
-                    <div class="card-content content home-blog-content">
-                      <div class="media-content">
-                        <h3 class="has-text-black">{{ .Title }}</h3>
-                      </div> 
-                      <div class="content">
-                    <time><small><i class="far fa-calendar-alt"></i> {{.Date.Format "Jan 2, 2006" }}</small></time><br>
-                        <a href="{{ .Permalink }}" class="secondary-btn">Continue Reading</a>
-                      </div>
-                    </div>
-                </div>
-              </div>
+          {{ partial "templates/blog-thumbnail" . }}
         {{ end }}
         </div>
     </div>

@@ -15,7 +15,8 @@ div.section {
     padding: 3rem 2rem;
 }
 
-body p {
+body p,
+.blog__date {
     font-family: 'Raleway', sans-serif;
     line-height: 2;
     font-weight: 100;
@@ -47,6 +48,15 @@ body h6.subtitle {
 body p {
     font-size: 14px;
 }
+
+/* ===============
+HEADER
+=============== */
+a.navbar-item img {
+    max-height: 3.75rem;
+}
+
+
 
 /* ===============
 BLOCKS

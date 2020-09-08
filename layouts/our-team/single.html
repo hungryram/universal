@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column has-text-centered">
+                <img src="{{ .Params.image }}" alt="{{ .Title }}" width="400">
+            </div>
+            <div class="column content">
+                <h1 class="title is-2 mb-2">{{ .Title }}</h1>
+                <p class="pb-4">{{ .Params.job_title }}</p>
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
