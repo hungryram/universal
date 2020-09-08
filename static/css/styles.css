@@ -21,8 +21,8 @@ body p {
     font-weight: 100;
 }
 
-div.content.single-content p {
-    font-weight: 300;
+body .content a {
+    font-family: 'Raleway', sans-serif;
 }
 
 body h1.title,
@@ -42,7 +42,6 @@ body h4.subtitle,
 body h5.subtitle,
 body h6.subtitle {
     font-family: 'Raleway', sans-serif;
-    color: #C69C6D;
 }
 
 body p {
