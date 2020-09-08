@@ -140,6 +140,7 @@ fields:
     - text-over-image
     - text-next-to-image
     - featured-team
+    - featured-blog
     config:
       min: 
       max: 
