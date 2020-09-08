@@ -28,4 +28,5 @@ fields:
     step: 
   description: Order numerically who displays first
 pages:
+- content/our-team/finley-carl.md
 - content/our-team/john-smith.md
