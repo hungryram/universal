@@ -69,8 +69,12 @@ home_page:
     body_text: Read up on our latest blog posts
 footer:
   footer_colors:
-    footer_background_color: ''
-    enable_white_text_color: false
+    footer_background_color: "#212121"
+    enable_white_text_color: true
+  footer_content:
+    logo: "/uploads/cropped-logotrans.png"
+    heading: My Heading
+    short_bio: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod"
 website_colors:
   primary_color: ''
   secondary_colors: ''
