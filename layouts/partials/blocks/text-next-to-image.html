@@ -1,0 +1,21 @@
+<div class="section">
+    <div class="container">
+        <div class="columns is-vcentered">
+            {{ if .image }}
+            <div class="column has-text-centered">
+                <img src="{{ .image }}" alt="{{ .image_alt_tag }}" width="500">
+            </div>
+            {{ end }}
+            <div class="column">
+                {{ if .heading }}
+                <h1 class="title is-2">{{ .heading }}</h1>
+                {{ end }}
+                {{ if .body_text }}
+                <p>{{ .body_text | markdownify }}</p>
+                {{ end }}
+                <br><br>
+                {{ if .button_text }}<a href="{{ .button_link }}">{{ .button_text }}</a>{{ end }}
+            </div>
+        </div>
+    </div>
+</div>

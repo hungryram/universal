@@ -8,6 +8,9 @@
   {{ if eq "text-over-image" .template }}
     {{ partial "blocks/text-over-image" . }}
   {{ end }}
+  {{ if eq "text-next-to-image" .template }}
+  {{ partial "blocks/text-next-to-image" . }}
+{{ end }}
 {{ end }}
 {{/*  END BLOCKS  */}}
 
