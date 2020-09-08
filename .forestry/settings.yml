@@ -17,6 +17,10 @@ sections:
   match: "*"
   templates:
   - page
+- type: document
+  path: content/reviews/_index.md
+  label: Add Reviews
+  match: "**/*"
 - type: directory
   path: content/our-team
   label: Add/View Team
