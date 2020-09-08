@@ -12,7 +12,16 @@ header:
     enable_white_menu_color: true
 home_page:
   slideshow:
-    slideshow: []
+    slideshow:
+    - heading: First Slide
+      body: the body text
+      slideshow_button:
+        button_text: Button Text
+        button_link: https://hungryram.com
+        button_background_color: "#000000"
+        new_tab: false
+        button_text_color: ''
+      image: "/uploads/shutterstock_451421581.jpg"
   home_sections:
   - template: featured
     featured_blocks:
