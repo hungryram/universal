@@ -1,5 +1,6 @@
 +++
 categories = []
+date = 2020-01-09T00:00:00Z
 date_published = "09/24/2020"
 featured_image = "/uploads/shutterstock_451421581.jpg"
 tags = []
