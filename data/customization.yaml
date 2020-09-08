@@ -20,7 +20,7 @@ home_page:
         button_link: https://hungryram.com
         button_background_color: "#000000"
         new_tab: false
-        button_text_color: ''
+        button_text_color: '#fefefe'
       image: "/uploads/shutterstock_451421581.jpg"
   home_sections:
   - template: featured
@@ -28,8 +28,7 @@ home_page:
     - image: ''
       heading: First Featured
       body: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, soluta
-        nemo in dignissimos neque ipsum, minus enim accusamus sapiente incidunt rem?
-        Ipsum in ea dolores harum? Ab sapiente amet temporibus!
+        nemo in dignissimo
     - image: ''
       heading: Second Featured
       body: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, soluta

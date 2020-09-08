@@ -1,3 +1,15 @@
 {{ partial "global/head" . }}
 {{ partial "home/slideshow" . }}
+{{ range $.Site.Data.customization.home_page.home_sections }}
+{{/*  START BLOCKS  */}}
+  {{ if eq "featured" .template }}
+    {{ partial "blocks/featured" . }}
+  {{ end }}
+  {{ if eq "call-to-action" .template }}
+    {{ partial "blocks/cta" . }}
+  {{ end }}
+{{ end }}
+{{/*  END BLOCKS  */}}
+
 {{ partial "global/footer" . }}
+

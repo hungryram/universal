@@ -1,0 +1,15 @@
+{{ $featured := $.Site.Data.customization.home_page.home_sections }}
+<div class="section">
+    <div class="container pt-6 pb-6">
+        <div class="columns is-multiline">
+        {{ range .featured_blocks}}
+            <div class="column is-4">
+                <div class="featured-wrap">
+                    <h4 class="title is-6">{{ .heading }}</h4>
+                    {{ if .body }}<p>{{ .body }}</p>{{ end }}
+                </div>
+            </div>
+        {{ end }}
+        </div>
+    </div>
+</div>
