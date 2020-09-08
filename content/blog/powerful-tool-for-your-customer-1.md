@@ -1,5 +1,6 @@
 +++
 categories = ["Real Estate"]
+date = 2020-03-09T00:00:00Z
 date_published = "05/15/2020"
 featured_image = "/uploads/featured3.jpg"
 tags = ["tags"]
