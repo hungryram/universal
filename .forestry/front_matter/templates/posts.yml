@@ -40,3 +40,5 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
+pages:
+- content/blog/powerful-tool-for-your-customer.md
