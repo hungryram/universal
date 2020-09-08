@@ -133,6 +133,7 @@ fields:
     template_types:
     - featured
     - text-over-image
+    - text-next-to-image
     config:
       min: 
       max: 
