@@ -14,6 +14,15 @@ header:
 home_page:
   slideshow:
     slideshow:
+    - image: "/uploads/sidekix-media-l6u4gikvxbs-unsplash.jpg"
+      heading: Next Slide
+      body: lorem ipsum lorem ipsum
+      slideshow_button:
+        button_text: ''
+        button_link: ''
+        new_tab: false
+        button_background_color: ''
+        button_text_color: ''
     - heading: First Slide
       body: the body text
       slideshow_button:
