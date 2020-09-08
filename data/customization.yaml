@@ -10,6 +10,7 @@ header:
   colors:
     header_background_color: "#F6F6F6"
     enable_white_menu_color: true
+  page_banner_image: "/uploads/sidekix-media-l6u4gikvxbs-unsplash.jpg"
 home_page:
   slideshow:
     slideshow:
