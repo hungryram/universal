@@ -25,6 +25,11 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: page_banner_image
+    type: file
+    config:
+      maxSize: 2
+    label: Page Banner Image
   - name: branding
     type: field_group
     config: {}
