@@ -4,16 +4,38 @@ form_success_page:
   body: ''
 header:
   branding:
-    site_title: ''
-    logo: ''
-    favicon: ''
+    site_title: Universal
+    logo: "/uploads/cropped-logotrans.png"
+    favicon: "/uploads/cropped-logotrans.png"
   colors:
-    header_background_color: ''
-    enable_white_menu_color: false
+    header_background_color: "#F6F6F6"
+    enable_white_menu_color: true
 home_page:
   slideshow:
     slideshow: []
-  home_sections: []
+  home_sections:
+  - template: featured
+    featured_blocks:
+    - image: ''
+      heading: First Featured
+      body: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, soluta
+        nemo in dignissimos neque ipsum, minus enim accusamus sapiente incidunt rem?
+        Ipsum in ea dolores harum? Ab sapiente amet temporibus!
+    - image: ''
+      heading: Second Featured
+      body: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, soluta
+        nemo in dignissimos neque ipsum, minus enim accusamus sapiente incidunt rem?
+        Ipsum in ea dolores harum? Ab sapiente amet temporibus!
+    - image: ''
+      heading: Third Featured
+      body: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, soluta
+        nemo in dignissimos neque ipsum, minus enim accusamus sapiente incidunt rem?
+        Ipsum in ea dolores harum? Ab sapiente amet temporibus!
+    - image: ''
+      heading: Fourth Featured
+      body: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, soluta
+        nemo in dignissimos neque ipsum, minus enim accusamus sapiente incidunt rem?
+        Ipsum in ea dolores harum? Ab sapiente amet temporibus!
 footer:
   footer_colors:
     footer_background_color: ''
