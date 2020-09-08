@@ -164,6 +164,30 @@ fields:
       label: Enable White Text Color
       description: Makes navigation on white background legible.
     label: Footer Colors
+  - name: footer_content
+    type: field_group
+    config: {}
+    fields:
+    - name: logo
+      type: file
+      config:
+        maxSize: 2
+      label: Logo
+    - name: heading
+      type: text
+      config:
+        required: false
+      label: Heading
+    - name: short_bio
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Short Bio
+    label: Footer Content
   label: Footer
 - name: website_colors
   type: field_group
