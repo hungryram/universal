@@ -17,6 +17,13 @@ sections:
   match: "*"
   templates:
   - page
+- type: directory
+  path: content/our-team
+  label: Add/View Team
+  create: documents
+  match: "**/*"
+  templates:
+  - team
 - type: heading
   label: Blog
 - type: directory
