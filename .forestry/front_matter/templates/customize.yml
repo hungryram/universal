@@ -130,7 +130,8 @@ fields:
   - name: home_sections
     type: blocks
     label: Home Sections
-    template_types: []
+    template_types:
+    - featured
     config:
       min: 
       max: 
