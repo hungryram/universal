@@ -64,6 +64,9 @@ home_page:
   - template: featured-team
     title: Meet the Team
     body_text: Our team can help you out!
+  - template: featured-blog
+    heading: Latest News
+    body_text: Read up on our latest blog posts
 footer:
   footer_colors:
     footer_background_color: ''
