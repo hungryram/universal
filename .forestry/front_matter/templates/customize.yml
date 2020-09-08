@@ -139,6 +139,7 @@ fields:
     - featured
     - text-over-image
     - text-next-to-image
+    - featured-team
     config:
       min: 
       max: 
