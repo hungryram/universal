@@ -1,6 +1,7 @@
 +++
 categories = ["Buying", "Selling"]
-date_published = 2020-01-07T00:00:00Z
+date = 2020-07-07T00:00:00Z
+date_published = "07/01/2020"
 featured_image = "/uploads/sidekix-media-l6u4gikvxbs-unsplash.jpg"
 tags = ["this tag"]
 title = "Growth your business strategy"
