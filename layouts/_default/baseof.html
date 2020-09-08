@@ -1,0 +1,17 @@
+{{ partial "global/head" . }}
+{{ partial "global/navbar" . }}
+<div class="page-banner" style="background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{ .Site.Data.customization.header.page_banner_image }}) no-repeat center;background-size:cover;">
+    <div class="section">
+        <div class="container pt-6 pb-6">
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <h1 class="title is-3 has-text-white">{{ replace .Name "-" " " | title }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ block "main" . }}
+
+{{ end }}
+{{ partial "global/footer.html" . }}

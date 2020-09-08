@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns is-multiline is-variable is-8">
+            {{ range .RegularPages.ByWeight }}
+                <div class="column is-3 has-text-centered mt-6">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width:100%;height:400px;object-fit:cover">
+                    <h1 class="title is-5 mb-2">{{ .Title }}</h1>
+                    <p>{{ .Params.job_title }}</p>
+                    <a href="{{ .Permalink }}" class="link-color">Read More</a>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
