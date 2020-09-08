@@ -20,7 +20,7 @@ home_page:
         button_link: https://hungryram.com
         button_background_color: "#000000"
         new_tab: false
-        button_text_color: '#fefefe'
+        button_text_color: "#fefefe"
       image: "/uploads/shutterstock_451421581.jpg"
   home_sections:
   - template: featured
@@ -51,6 +51,14 @@ home_page:
     image: "/uploads/sidekix-media-l6u4gikvxbs-unsplash.jpg"
     link_text: Read More
     link: https://hungryram.com
+  - template: text-next-to-image
+    heading: Welcome to my website
+    button_link: https://hungryram.com
+    image: "/uploads/intro1.jpg"
+    body_text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ab
+      consequatur quibusdam quidem omnis, labore unde consectetur mollitia porro autem
+      ipsum magni similique dignissimos impedit nulla, dolor, nemo a quo.
+    button_text: Read More
 footer:
   footer_colors:
     footer_background_color: ''
