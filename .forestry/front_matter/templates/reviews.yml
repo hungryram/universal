@@ -1,4 +1,57 @@
 ---
 label: Reviews
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: body_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body Text
+- name: reviews
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: review
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Review
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: date
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Date
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Reviews
