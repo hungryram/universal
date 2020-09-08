@@ -7,10 +7,25 @@ fields:
   config:
     required: false
   label: Name
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
 - name: job_title
   type: text
   config:
     required: false
   label: Job Title
+- name: weight
+  type: number
+  label: Order
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  description: Order numerically who displays first
 pages:
 - content/our-team/john-smith.md
