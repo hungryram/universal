@@ -132,6 +132,7 @@ fields:
     label: Home Sections
     template_types:
     - featured
+    - text-over-image
     config:
       min: 
       max: 
