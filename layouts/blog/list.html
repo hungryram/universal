@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                {{ partial "breadcrumbs.html" . }}
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-8">
+                {{ $paginator := .Paginate (where .Pages "Type" "blog") 4 }}
+                {{ range $paginator.Pages }}
+
+                <div class="box content">
+                    <img src="{{ .Params.featured_image }}" alt="">
+                    <h1 class="title is-4">{{.Title}}</h1>
+                    <time>{{.Date.Format "Jan 2, 2006" }}</time><br><br>
+                    {{ .Summary | markdownify }}
+                    <div class="columns">
+                        <div class="column">
+                            {{ $blogDate := .Params.date_published }}
+                            <a href="{{ .Permalink }}" class="secondary-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                    {{ partial "pagination" . }}
+            </div>
+            
+
+{{ partial "templates/sidebar.html" . }}
+
+        </div>
+    </div>
+</div>
+{{ end }}

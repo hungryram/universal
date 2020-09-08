@@ -1,5 +1,55 @@
-        <footer class="footer">
-            <h1 class="title is-3">my footer</h1>
+{{ $footerContent := .Site.Data.customization.footer.footer_content }}
+{{ $footerColors := .Site.Data.customization.footer.footer_colors }}
+{{ $footerSocial := .Site.Data.profile.social_media }}
+{{ $footerContact := .Site.Data.profile.contact }}
+        <footer class="footer" style="{{ safeHTMLAttr (printf "background-color: %s" $footerColors.footer_background_color) }}">
+            <div class="section">
+                <div class="container">
+                    <div class="columns has-text-centered">
+                        <div class="column is-half is-offset-one-quarter">
+                            {{ if $footerContent.logo }}
+                            <img src="{{ $footerContent.logo }}" alt="{{ .Site.Data.profile.business_name }}" width="200">
+                            {{ else }}
+                            <h1 class="title is-3 {{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">{{ $footerContent.heading }}</h1>
+                            {{ end }}
+                        </div>
+                    </div>
+                    <div class="columns has-text-centered">
+                        <div class="column">
+                            <ul>
+                                {{ if $footerSocial.instagram }}<li class="is-inline mr-4"><a href="{{ $footerSocial.instagram }}" class="{{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Instagram</a></li>{{ end }}
+                                {{ if $footerSocial.facebook }}<li class="is-inline mr-4"><a href="{{ $footerSocial.facebook }}" class="{{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Facebook</a></li>{{ end }}
+                                {{ if $footerSocial.twitter }}<li class="is-inline mr-4"><a href="{{ $footerSocial.twitter }}" class="{{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Twitter</a></li>{{ end }}
+                                {{ if $footerSocial.youtube }}<li class="is-inline mr-4"><a href="{{ $footerSocial.youtube }}" class="{{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Youtube</a></li>{{ end }}
+                                {{ if $footerSocial.linkedin }}<li class="is-inline mr-4"><a href="{{ $footerSocial.linkedin }}" class="{{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Linkedin</a></li>{{ end }}
+                                {{ if $footerSocial.pinterest }}<li class="is-inline mr-4"><a href="{{ $footerSocial.pinterest }}" class="{{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Pinterest</a></li>{{ end }}
+                                {{ if $footerSocial.yelp }}<li class="is-inline mr-4"><a href="{{ $footerSocial.yelp }}" class="{{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Yelp</a></li>{{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-three-fifths is-offset-one-fifth has-text-centered">
+                            {{ if $footerContent.short_bio }}
+                                <p class="{{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">{{ $footerContent.short_bio }}</p>
+                            {{ end }}
+                        </div>
+                    </div>
+                    <div class="columns is-three-fifths is-offset-one-fifth has-text-centered">
+                        <div class="column content">
+                            {{ if $footerContact.street }}<p class="{{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">{{ $footerContact.street }} {{ $footerContact.city}} {{ $footerContact.state}} {{ $footerContact.zip }}</p>{{ end }}
+                            {{ if $footerContact.mobile }}<a href="tel:{{ $footerContact.mobile }}" class="is-block {{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Mobile {{ $footerContact.mobile }}</a>{{ end }}
+                            {{ if $footerContact.phone }}<a href="tel:{{ $footerContact.phone }}" class="is-block {{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Phone {{ $footerContact.phone }}</a>{{ end }}
+                            {{ if $footerContact.email }}<a href="mailto:{{ $footerContact.email }}" class="is-block {{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Email {{ $footerContact.email }}</a>{{ end }}
+                        </div>
+                    </div>
+                    <hr style="background: rgb(255 255 255 / 20%)">
+                    <div class="columns">
+                        <div class="column">
+                            <p class="is-size-7 {{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">&copy; Copyright {{ dateFormat "2006" now }}, {{ .Site.Data.profile.primary_company_name }}  &middot; <a href="https://hungryram.com" target="_blank" class="is-size-7 {{ if $footerColors.enable_white_text_color }}has-text-white{{ else }}has-text-black{{ end }}">Website Developed by Hungry Ram</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
