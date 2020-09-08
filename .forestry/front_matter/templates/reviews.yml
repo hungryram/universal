@@ -39,17 +39,14 @@ fields:
       required: false
     label: Title
   - name: date
-    type: select
-    default: []
+    type: datetime
+    label: Date
+    description: ''
     config:
       required: false
-      options: []
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Date
+      date_format: 
+      time_format: 
+      display_utc: false
   config:
     min: 
     max: 
