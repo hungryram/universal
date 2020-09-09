@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            {{ range .RegularPages }}
+                <div class="column is-6">
+                    <div class="column">
+                        <div class="column">
+                            <div class="bg-img"></div>
+                        </div>
+                        <div class="column">
+                            <h2 class="title is-4">{{ .Title }}</h2>
+                            {{ .Summary }}
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

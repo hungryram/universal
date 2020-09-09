@@ -6,6 +6,9 @@
             <div class="columns has-text-centered">
                 <div class="column">
                     <h1 class="title is-3 has-text-white">{{ replace .Name "-" " " | title }}</h1>
+                    {{ if .Params.body_text }}
+                    <p class="has-text-white">{{ .Params.body_text }}</p>
+                    {{ end }}
                 </div>
             </div>
         </div>
