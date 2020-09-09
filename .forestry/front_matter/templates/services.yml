@@ -14,4 +14,5 @@ fields:
   label: Image
 pages:
 - content/services/_index.md/service-one.md
+- content/services/_index.md/service-three.md
 - content/services/_index.md/service-two.md
