@@ -21,6 +21,13 @@ sections:
   path: content/reviews/_index.md
   label: Add Reviews
 - type: directory
+  path: content/services/_index.md
+  label: Services
+  create: documents
+  match: "**/*"
+  templates:
+  - services
+- type: directory
   path: content/our-team
   label: Add/View Team
   create: documents
