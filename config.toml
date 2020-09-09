@@ -2,6 +2,10 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 summaryLength = 20
 [[menu.main]]
+name = "Services"
+url = "/services"
+weight = 5
+[[menu.main]]
 name = "Reviews"
 url = "/reviews"
 weight = 4
