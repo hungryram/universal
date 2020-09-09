@@ -2,10 +2,18 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 summaryLength = 20
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+name = "Reviews"
+url = "/reviews"
+weight = 4
+[[menu.main]]
+name = "Our Team"
+url = "/our-team"
+weight = 2
 [[menu.main]]
 name = "Blog"
 url = "/blog"
 weight = 3
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
