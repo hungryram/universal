@@ -3,14 +3,17 @@
     <div class="container">
         <div class="columns is-multiline">
             {{ range .RegularPages }}
-                <div class="column is-6">
-                    <div class="column">
+                <div class="column is-6" style="border:1px solid gray;">
+                    <div class="columns">
                         <div class="column">
-                            <div class="bg-img"></div>
+                            <div class="column">
+                                <div class="bg-img" style="background:url({{ .Params.image }})no-repeat center;background-size:cover;height:100px;"></div>
+                            </div>
                         </div>
                         <div class="column">
                             <h2 class="title is-4">{{ .Title }}</h2>
                             {{ .Summary }}
+                            <a href="{{ .Permalink }}">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -19,3 +22,4 @@
     </div>
 </div>
 {{ end }}
+
